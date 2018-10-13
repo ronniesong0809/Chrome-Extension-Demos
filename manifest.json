@@ -3,7 +3,16 @@
     "name": "clock",
     "version": "1.0",
     "description": "simple clock extension demo",
+    "icons": {
+        "16": "images/16.png",
+        "48": "images/48.png",
+        "128": "images/128.png"
+    },
     "browser_action": {
+        "default_icon": {
+            "19": "images/19.png",
+            "38": "images/38.png"
+        },
         "default_title": "clock",
         "default_popup": "index.html"
     }
