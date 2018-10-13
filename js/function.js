@@ -1,15 +1,15 @@
 function clock(el){
     var today=new Date();
-    var s=today.getSeconds();
-    var m=today.getMinutes();
-    var h=today.getHours();
+    var sec=today.getSeconds();
+    var min=today.getMinutes();
+    var hour=today.getHours();
     
-    if(s < 10)
-        s = '0' + sec;
-    if(m < 10)
-        m ='0' + m;
+    if(sec < 10)
+        sec = '0' + sec;
+    if(min < 10)
+        min ='0' + min;
     
-    el.innerHTML = h+":"+m+":"+s;
+    el.innerHTML = hour+":"+min+":"+sec;
     setTimeout(function(){clock(el)}, 1000);
 }
 
