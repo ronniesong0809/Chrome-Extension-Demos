@@ -9,6 +9,10 @@
         ]
     },
     "content_scripts": [{
+        "matches": ["*://*/*"],
         "js": ["js/content_script.js"]
-    }]
+    }],
+    "permissions": [
+        "contextMenus"
+    ]
 }
