@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Google Translate",
+    "version": "1.0",
+    "description": "Translate selected",
+    "background": {
+        "scripts": [
+            "js/script.js"
+        ]
+    },
+    "content_scripts": [{
+        "js": ["js/content_script.js"]
+    }]
+}
