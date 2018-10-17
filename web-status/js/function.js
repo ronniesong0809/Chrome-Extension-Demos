@@ -15,14 +15,15 @@ function httpRequest(url, callback) {
 function checkStatus() {
     httpRequest('http://ronniesong.tk/', function (status) {
         if (status)
-            console.log("Online");
+            chrome.browserAction.setIcon({
+                path: 'images/online.png'
+            });
         else
-            console.log("Offline");
+            chrome.browserAction.setIcon({
+                path: 'images/offline.png'
+            });
         setTimeout(checkStatus, 5000);
     });
-
 }
-
-
 
 checkStatus();
